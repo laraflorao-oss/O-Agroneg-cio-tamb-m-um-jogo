@@ -1,0 +1,404 @@
+:root{
+    --main-color: #1f491a;
+    --blue: #6c85e8;
+    --border: 0.1rem solid rgba(255,255,255,0.3);
+    font-size: 10px;
+
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    outline: none;
+    bolder: none;
+    text-decoration: none;
+
+    transition: 0.2s linear;
+       font-family: "Roboto", sans-serif;
+;
+}
+
+body {
+
+  background-image: url("fundopixel.jpg.png"); 
+
+
+  background-repeat: no-repeat; 
+
+  background-size: cover; 
+
+  background-position: center center; 
+
+  background-attachment: fixed; 
+
+  min-height: 100vh; 
+  margin: 0;
+}
+
+section{
+    padding: 3rem 2em;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;   
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border); 
+}
+
+.header section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    
+     font-family: "Luckiest Guy", cursive;
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: rgb(17, 56, 19);
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar a:hover {
+    color: var(--main-color);
+    border-bottom: 0.1rem solid var(--main-color);
+    padding-bottom: 0.5rem;
+    
+    transform: scale(1.05) !important;
+    
+}
+
+.icons img {
+    background-color: #39622f;
+   display: flex;
+   justify-content: flex-home;
+    margin: 1rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+
+}
+
+.icons img:hover {
+        width: 40px;
+        height: 40px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    
+}
+.caixaplaca{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.imagem-grande{
+    width: 600px;
+    min-width: 600px;
+    height: auto;
+    display: block;
+}
+
+.texto-da-placa{
+    
+    position: absolute;
+    z-index: 2;
+
+    text-align: center;
+    width: 30%;
+
+    color: rgb(94, 31, 11);
+    font-size: 32px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 50px;
+
+}
+
+
+.botao-link {
+    position: absolute;       
+    z-index: 3;               
+    
+ 
+    margin-top: 270px;      
+
+    
+    background-color: #ff9900; 
+    color: #ffffff;            
+    padding: 6px 15px;        
+    border-radius: 8px;            
+    
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 20px;
+    text-decoration: none;   
+    text-transform: uppercase; 
+    
+    
+    box-shadow: 0px 5px 0px #b36b00; 
+    transition: all 0.2s ease; 
+}
+
+
+.botao-link:hover {
+    background-color: #ffaa22;
+    transform: scale(1.05);    
+    cursor: pointer;        
+}
+
+.botao-voltar {
+    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 10;
+
+    background-color: #ff9900; 
+    color: #ffffff;           
+    padding: 12px 24px;        
+    border-radius: 8px;       
+    
+  
+    font-family: "Luckiest Guy", cursive;
+    font-size: 1.2rem;
+    text-decoration: none;    
+    text-transform: uppercase; 
+
+
+    box-shadow: 0px 4px 0px #b36b00; 
+    
+    transition: all 0.2s ease; 
+}
+
+
+.botao-voltar:hover {
+    background-color: #ffaa22; 
+    transform: scale(1.1);     
+    cursor: pointer;         
+}
+
+.secao-conteudo-p2 {
+    position: relative;
+    display: block;
+    float: left;
+    width: 45%;              
+    height: auto !important;
+    min-height: auto !important;
+    padding: 0 !important; 
+    margin: 0 !important;
+    z-index: 1;
+}
+
+
+.caixa-texto {
+     position: absolute;
+    left: 50px;
+    top: 50px;
+        position: relative;
+    width: 190%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;
+}
+
+
+.secao-conteudo-p3 {
+    position: relative;
+    display: block;
+    float: left;
+    width: 45%;               
+    height: auto !important;
+    min-height: auto !important;
+    padding: 0 !important; 
+    margin: 0 !important;
+    z-index: 1;
+}
+
+
+.caixa-texto3 {
+    position: absolute;
+    width: 190%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+    top: 800px;
+    left: -620px;
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;
+}
+
+ .botao-youtube {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff9500; 
+    color: #000000; 
+    text-decoration: none;
+    font-size: 16px; 
+     font-family: "Luckiest Guy", cursive;
+    font-weight: bold;
+    border-radius: 6px; 
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    margin-left: 0px;
+        position: absolute;
+    left: 880px;
+    top: 700px; 
+}
+
+
+.botao-youtube:hover {
+    background-color: #cc4400;
+    cursor: pointer;
+      transform: scale(1.1);  
+      
+}
+
+.caixa-texto4{
+
+    position: absolute;
+    left: 50px;
+    top: 50px;
+        position: relative;
+    width: 85%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;
+}
+.caixa-texto4a{
+
+    position: relative;
+    left: 50px;
+    top: 5px;
+        position: relative;
+    width: fit-content;
+    max-width: 500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 5px 40px; 
+    font-size: 12px;
+    white-space: pre-line; 
+    z-index: 2;
+}
+
+.caixa-texto5{
+    position: relative;
+    width: 85%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;
+}
+
+.caixa-texto6{
+     position: relative;
+    width: 85%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;  
+}
+
+.caixa-texto7{
+    position: relative;
+    width: 85%;
+    max-width: 1500px; 
+    margin-left: 10px !important;       
+   
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;  
+
+}
+
+.caixa-texto8{
+     position: relative;
+    width: 85%;
+    max-width: 300px; 
+    margin-left: -10px !important; 
+    margin-top: 30vh !important;      
+    
+    
+    background-color: rgba(54, 108, 58, 0.85);
+    border-radius: 16px;
+    padding: 35px 40px; 
+    font-size: 18px;
+    white-space: pre-line; 
+    z-index: 2;  
+   
+}
+
+.linhadotempo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 50px;
+    left: 500px;
+    width: auto
+    height: auto;
+    z-index: 1;
+    .linhadotempo img {
+    width: 1000px !important;  /* Ajuste esse número para o tamanho que você quiser que as bolinhas/ícones fiquem */
+    height: 600px !important;
+    object-fit: contain;
+}
+}
